@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchTodo } from '../features/tasksSlice'
+import './TaskList.css'
 
 export default function TaskList() {
     const tasks = useSelector((state) => state.tasks.tasks)

@@ -20,17 +20,17 @@ export default function TaskList() {
     }
 
     return (
-        <div>
+        <div className="task-container">
             <h2>Tasks</h2>
-            <ul>
+            <ul className="task-list">
                 {tasks.map(task => (
-                    <li key={task.id}>
-                        <div>
+                    <li key={task.id} className="task-item">
+                        <div className="task-details">
                             <p>{task.title}</p>
                             {task.description && <p>{task.description}</p>}
                             <p>Status: {task.status}</p>
                         </div>
-                        <div>
+                        <div className="task-buttons">
                             <button>edit</button>
                             <button>delete</button>
                         </div>

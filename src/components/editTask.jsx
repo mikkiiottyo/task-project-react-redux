@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function EditTask() {
+const EditTask = ({task}) => {
   return (
     <div>
-      
+      <button>Edit</button>
     </div>
   )
 }
+export default EditTask

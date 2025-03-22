@@ -7,7 +7,7 @@ const initialState = {
     status: 'ALL'
 }
 
-const fetchTodo = createAsyncThunk('task/fetchTodo', async () => {
+export const fetchTodo = createAsyncThunk('task/fetchTodo', async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/?_limit=5')
     const data = await response.json()
     return data.map(task => (

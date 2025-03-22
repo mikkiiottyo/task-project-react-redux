@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import './addTask.css'
+import { useDispatch } from 'react-redux'
+import {v4 as uuid4} from 'uuid'
 
 const AddTask = () => {
     const [title, setTitle] = useState ('')
     const [description, setDescription] = useState('')
-    const [status, setStatus] = useState('')
+    const [status, setStatus] = useState('To Do')
 const handleSubmit = (e) => {
     e.preventDefault()
 }

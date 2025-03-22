@@ -1,9 +1,9 @@
 import React from 'react'
 
-const EditTask = ({task}) => {
+const EditTask = ({task,className}) => {
   return (
     <div>
-      <button>Edit</button>
+       <button className={className}>Edit</button>
     </div>
   )
 }

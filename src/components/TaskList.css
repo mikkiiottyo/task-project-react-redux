@@ -51,10 +51,8 @@
     transition: background 0.3s ease;
   }
   
-  .task-press button:hover {
-    background: #0056b3;
-  }
   
+
   .task-press button:last-child {
     background: #dc3545;
   }

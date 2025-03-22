@@ -31,7 +31,7 @@ export default function TaskList() {
                             {task.description && <p>{task.description}</p>}
                             <p>Status: {task.status}</p>
                         </div>
-                        <div className="task-buttons">
+                        <div className="task-press">
                             <button>edit</button>
                             <button>delete</button>
                         </div>

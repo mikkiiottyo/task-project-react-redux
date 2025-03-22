@@ -4,11 +4,20 @@ import { useDispatch } from 'react-redux'
 import {v4 as uuid4} from 'uuid'
 
 const AddTask = () => {
-    const [title, setTitle] = useState ('')
-    const [description, setDescription] = useState('')
-    const [status, setStatus] = useState('To Do')
+const [title, setTitle] = useState ('')
+const [description, setDescription] = useState('')
+const [status, setStatus] = useState('To Do')
+const dispatch = useDispatch()
+
 const handleSubmit = (e) => {
     e.preventDefault()
+    const newTask = {
+        id: uuid4(),
+        title,
+        description,
+        status
+    }
+    dispatch()
 }
 
     return (

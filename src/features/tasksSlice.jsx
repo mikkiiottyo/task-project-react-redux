@@ -23,7 +23,11 @@ export const fetchTodo = createAsyncThunk('task/fetchTodo', async () => {
 const taskSlice = createSlice({
     name: 'task',
     initialState,
-    reducers: {},
+    reducers: {
+        addTask: (state, action) => {
+            state.task.push(action.payload)
+        }
+    },
     extraReducers: (builder) => {
         builder
             .addCase(fetchTodo.pending, (state) => {

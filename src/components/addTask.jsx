@@ -1,4 +1,5 @@
 import React from 'react'
+import './addTask.css'
 
 const AddTask = () => {
     return (

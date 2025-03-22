@@ -40,23 +40,24 @@
 }
 
 
-  .task-press button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    margin-left: 5px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  
+.btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-  .task-press button:last-child {
-    background: #dc3545;
-  }
-  
-  .task-press button:last-child:hover {
-    background: #a71d2a;
-  }
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #a71d2a;
+}

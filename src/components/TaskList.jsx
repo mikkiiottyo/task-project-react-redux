@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchTodo } from '../features/tasksSlice'
 import './TaskList.css'
+import EditTask from './EditTask'
 
 export default function TaskList() {
     const tasks = useSelector((state) => state.tasks.tasks)
@@ -32,7 +33,7 @@ export default function TaskList() {
                             <p>Status: {task.status}</p>
                         </div>
                         <div className="task-press">
-                            <button>edit</button>
+                            <EditTask task={task} />
                             <button>delete</button>
                         </div>
                     </li>

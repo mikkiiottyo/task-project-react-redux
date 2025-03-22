@@ -2,7 +2,35 @@ import React from 'react'
 
 const AddTask = () => {
     return (
-        <div>AddTask</div>
+        <form>
+            <div>
+                <input
+                type="text"
+                placeholder="Task Name"
+                className="form-container"
+                required
+                />
+            </div>
+            <div>
+                <textarea
+                placeholder="Task Description"
+                className=""
+                rows="3"
+                ></textarea>
+            </div>
+            <div>
+                <select>
+                    <option value="To Do">To Do</option> 
+                    <option value="In Progress">In progress</option> 
+                    <option value="Completed">Completed</option> 
+                </select>
+            </div>
+            <button
+            type="submit"
+            className=""
+            >Add Task
+            </button>
+        </form>
     )
 }
 export default AddTask

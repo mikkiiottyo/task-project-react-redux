@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import './addTask.css'
 import { useDispatch } from 'react-redux'
 import {v4 as uuid4} from 'uuid'
+import { addTask } from '../features/tasksSlice'
+
 
 const AddTask = () => {
 const [title, setTitle] = useState ('')
@@ -17,7 +19,10 @@ const handleSubmit = (e) => {
         description,
         status
     }
-    dispatch()
+    dispatch(addTask(newTask))
+    setTitle('')
+    setDescription('')
+    setStatus('To Do')
 }
 
     return (

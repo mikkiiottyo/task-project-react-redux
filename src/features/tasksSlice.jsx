@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const initialState = {
-    task: [],
+    tasks: [],
     loading: false,
     error: null,
     status: 'ALL'

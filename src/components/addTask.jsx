@@ -14,7 +14,7 @@ const AddTask = () => {
             <div>
                 <textarea
                 placeholder="Task Description"
-                className=""
+                className="textarea"
                 rows="3"
                 ></textarea>
             </div>
@@ -27,7 +27,7 @@ const AddTask = () => {
             </div>
             <button
             type="submit"
-            className=""
+            className="press"
             >Add Task
             </button>
         </form>

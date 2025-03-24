@@ -33,7 +33,7 @@ const taskSlice = createSlice({
             ))
         },
         deleteTask: (state, action) => {
-            state.task = state.task.filter(task => task.id !== action.payload)
+            state.tasks = state.tasks.filter(task => task.id !== action.payload)
         }
     },
     extraReducers: (builder) => {

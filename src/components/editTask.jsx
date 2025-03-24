@@ -10,10 +10,18 @@ const [status, setStatus] = useState('To Do')
 const dispatch = useDispatch()
   return (
     <div>
-       <button className={className} 
-       onClick={() => setIsEditing(true)}>Edit
-       </button>
+        {isEdit ? (
+            <div>ok</div>
+        ) : (
+        <button 
+        className={className} 
+        onClick={() => setIsEditing(true)}>Edit
+        </button>
+        )}
     </div>
+    
+   
   )
+
 }
 export default EditTask

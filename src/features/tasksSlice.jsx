@@ -31,7 +31,7 @@ const taskSlice = createSlice({
             state.tasks = state.tasks.map(task => (
                 task.id === action.payload.id ? action.payload : task
             ))
-        }
+        },
     },
     extraReducers: (builder) => {
         builder

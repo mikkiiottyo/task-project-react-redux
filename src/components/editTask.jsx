@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { editTask } from '../features/tasksSlice'
+
 
 
 const EditTask = ({task,className}) => {
@@ -8,6 +10,12 @@ const [title, setTitle] = useState (task.title)
 const [description, setDescription] = useState(task.description)
 const [status, setStatus] = useState(task.status)
 const dispatch = useDispatch()
+
+const handleEdit = () => {
+    dispatch(editTask({id: task.id, title, description,status}))
+    setIsEditing(false)
+}
+
   return (
     <div>
         {isEdit ? (
@@ -49,7 +57,8 @@ const dispatch = useDispatch()
         <button
         type="submit"
         className="add"
-        >Add Task
+        onClick={handleEdit}
+        >Save
         </button>
         </div>
         ) : (

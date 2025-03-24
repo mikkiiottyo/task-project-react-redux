@@ -10,7 +10,9 @@ const [status, setStatus] = useState('To Do')
 const dispatch = useDispatch()
   return (
     <div>
-       <button className={className}>Edit</button>
+       <button className={className} 
+       onClick={() => setIsEditing(true)}>Edit
+       </button>
     </div>
   )
 }

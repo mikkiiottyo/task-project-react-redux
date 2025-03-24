@@ -37,7 +37,7 @@ form {
     background: #fff;
   }
   
-  .press {
+  .add {
     background: #007bff;
     color: white;
     padding: 12px;
@@ -48,7 +48,7 @@ form {
     transition: background 0.3s ease;
   }
   
-  .press:hover {
+  .add:hover {
     background: #0056b3;
   }
   .cancel {

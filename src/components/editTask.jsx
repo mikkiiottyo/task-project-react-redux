@@ -43,11 +43,12 @@ const dispatch = useDispatch()
         <button
         type="submit"
         className="cancel"
+        onClick={() => setIsEditing(false)}
         >Cancel
         </button>
         <button
         type="submit"
-        className="press"
+        className="add"
         >Add Task
         </button>
         </div>

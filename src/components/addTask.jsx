@@ -57,7 +57,7 @@ const handleSubmit = (e) => {
             </div>
             <button
             type="submit"
-            className="press"
+            className="add"
             >Add Task
             </button>
         </form>

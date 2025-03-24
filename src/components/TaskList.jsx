@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { fetchTodo } from '../features/tasksSlice'
+import { deleteTask, fetchTodo } from '../features/tasksSlice'
 import './TaskList.css'
 import EditTask from './editTask'
 
@@ -11,6 +11,10 @@ export default function TaskList() {
     const loading = useSelector((state) => state.tasks.loading)
     const error = useSelector((state) => state.tasks.error)
     const dispatch = useDispatch()
+
+    const handleDelete = (id) => {
+        dispatch(deleteTask(id))
+    }
 
     useEffect(() => {
       dispatch(fetchTodo())
@@ -36,7 +40,9 @@ export default function TaskList() {
                         </div>
                         <div className="task-press">
                             <EditTask task={task} className="btn edit-btn" />
-                            <button className="btn delete-btn">Delete</button>
+                            <button className="btn delete-btn"
+                            onClick={() => handleDelete(task.id)}
+                            >Delete</button>
                         </div>
                     </li>
                 ))}

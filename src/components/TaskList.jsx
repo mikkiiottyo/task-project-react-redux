@@ -36,7 +36,7 @@ export default function TaskList() {
                         </div>
                         <div className="task-press">
                             <EditTask task={task} className="btn edit-btn" />
-                            <button className="btn delete-btn">delete</button>
+                            <button className="btn delete-btn">Delete</button>
                         </div>
                     </li>
                 ))}
